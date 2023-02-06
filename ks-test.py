@@ -1,8 +1,14 @@
-d_tab = 0.565
-val = [0.44, 0.81, 0.14, 0.05, 0.93]
+val = []
+d = []
+# get input from user
+n = int(input("Enter number of data : "))
+print("Enter data :")
+for i in range(n):
+    ele = float(input(f"data[{i+1}] : "))
+    val.append(ele)
+d_tab = float(input(f"Enter tabulated value : "))
+
 val.sort();
-n = len(val)
-d=[]
 
 for i in range(n):
     # d_plus
@@ -17,7 +23,9 @@ for i in range(n):
 d.sort(reverse=True)
 d_calc = d[0];
 
-if(d_calc < d_tab):
+if(d_calc <= d_tab):
+    print(f"Since, D-calc ({d_calc}) <= D-tab ({d_tab})")
     print("The numbers are uniformly distributed")
 else:
+    print(f"Since, D-tab ({d_tab}) < D-calc ({d_calc})")
     print("The numbers are not uniformly distributed")
