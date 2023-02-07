@@ -5,25 +5,25 @@ choice = input("\nChoose\n3. Three-digit\n4. Four-digit\n5. Five-digit\n0. Exit.
 print("\n")
 if choice == '3':
     prob = [0.72, 0.01, 0.27]
-    observed.append(float(input("All digits are same\t:\t")))
+    observed.append(float(input("All digits are same\t\t:\t")))
     observed.append(float(input("All digits are different\t:\t")))
-    observed.append(float(input("One pair\t:\t")))
+    observed.append(float(input("One pair\t\t\t:\t")))
 elif choice == '4':
     prob = [0.001, 0.504, 0.036, 0.027, 0.432]
-    observed.append(float(input("All digits are same\t:\t")))
+    observed.append(float(input("All digits are same\t\t:\t")))
     observed.append(float(input("All digits are different\t:\t")))
-    observed.append(float(input("Three like digits\t:\t")))
-    observed.append(float(input("Two pairs\t:\t")))
-    observed.append(float(input("One pair\t:\t")))
+    observed.append(float(input("Three like digits\t\t:\t")))
+    observed.append(float(input("Two pairs\t\t\t:\t")))
+    observed.append(float(input("One pair\t\t\t:\t")))
 elif choice == '5':
     prob = [0.0001, 0.3024, 0.072, 0.0045, 0.072, 0.108, 0.504]
-    observed.append(float(input("All digits are same\t:\t")))
+    observed.append(float(input("All digits are same\t\t:\t")))
     observed.append(float(input("All digits are different\t:\t")))
-    observed.append(float(input("Three like digits\t:\t")))
-    observed.append(float(input("Four like digits\t:\t")))
+    observed.append(float(input("Three like digits\t\t:\t")))
+    observed.append(float(input("Four like digits\t\t:\t")))
     observed.append(float(input("Full house (eg:11122, 11222)\t:\t")))
-    observed.append(float(input("Two pairs\t:\t")))
-    observed.append(float(input("One pair\t:\t")))
+    observed.append(float(input("Two pairs\t\t\t:\t")))
+    observed.append(float(input("One pair\t\t\t:\t")))
 elif choice == '0':
     exit(0)
 else:
