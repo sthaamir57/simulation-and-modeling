@@ -46,7 +46,7 @@ for i in range(len(observed)):
     print(f"{i+1}\t\t {observed[i]}\t\t {estimated[i]}\t\t {diff_squared[i]}")
 
 if (val_calc < val_tab):
-    print("\n\nThe numbers are uniformly distributed")
+    print("\n\nThe numbers are independent.")
 
 else:
-    print("\n\nThe numbers are not uniformly distributed")
+    print("\n\nThe numbers are not independent.")
